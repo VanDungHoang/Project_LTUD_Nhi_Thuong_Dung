@@ -1,0 +1,14 @@
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.csproj.AssemblyReference.cache
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.frmHeThong.resources
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.frmLogin.resources
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.frmThongTinTaiKHoan.resources
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.Properties.Resources.resources
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.csproj.GenerateResource.cache
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.csproj.CoreCompileInputs.cache
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\bin\Debug\DemoKhuDuLich.exe.config
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\bin\Debug\DemoKhuDuLich.exe
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\bin\Debug\DemoKhuDuLich.pdb
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.exe
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.pdb
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.frmDichVu.resources
+D:\LTUD\DemoKhuDuLich\DemoKhuDuLich\obj\Debug\DemoKhuDuLich.frmKhachHang.resources
