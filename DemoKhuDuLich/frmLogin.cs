@@ -44,7 +44,7 @@ namespace DemoKhuDuLich
             string matkhau = txtMatKhau.Text;
 
             // Read the text file
-            string[] lines = File.ReadAllLines(@"D:\LTUD\DemoKhuDuLich\login.txt");
+            string[] lines = File.ReadAllLines(@"D:\hk3\LTUD\DoAnLTUD\login.txt");
 
             // Check for a match
             bool timThay = false;
