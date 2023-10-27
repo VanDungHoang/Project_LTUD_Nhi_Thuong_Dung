@@ -17,22 +17,6 @@ namespace DemoKhuDuLich
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMatKhau_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        // git change ff
         private void button1_Click(object sender, EventArgs e)
         {
             Close(); // thoat 
@@ -44,7 +28,7 @@ namespace DemoKhuDuLich
             string matkhau = txtMatKhau.Text;
 
             // Read the text file
-            string[] lines = File.ReadAllLines(@"D:\hk3\LTUD\DoAnLTUD\login.txt");
+            string[] lines = File.ReadAllLines(@"D:\hk3\LTUD\DoAnLTUD1\login.txt");
 
             // Check for a match
             bool timThay = false;
@@ -74,7 +58,30 @@ namespace DemoKhuDuLich
                 MessageBox.Show("Sai ten dang nhap hoac mat khau");
             }
         } 
+        static bool CheckUser(string userName, string password)
+        {
+            try {
+                // Read the text file
+                string[] lines = File.ReadAllLines(@"D:\hk3\LTUD\DoAnLTUD1\login.txt");
+                foreach (string line in lines)
+                {
+                    string[] dangNhap = line.Split('\t');
+                    string luuTendangnhap = dangNhap[0];
+                    string luuMatkhau = dangNhap[1];
 
+                    if (userName == luuTendangnhap && password == luuMatkhau)
+                    {
+                        return true;
+                        break;
+                    }
+                }
+
+            } 
+            catch {
+                MessageBox.Show("lỗi truy xuất thông tin ngưởi dùng, kiểm tra đường dẫn !!");
+            }
+            return false;
+        }
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult r;
@@ -87,9 +94,28 @@ namespace DemoKhuDuLich
 
             
         }
-
-        private void label1_Click_1(object sender, EventArgs e)
+        /// <summary>
+        /// khi nhấn enter ở textMatKhau sẽ chuyển xuống khiểm tra luôn. true thì tiếp tục.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtMatKhau_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (CheckUser(txtDangNhap.Text, txtMatKhau.Text)
+)
+                {
+                    Hide(); // an login 
+                    frmHeThong frmHeThong = new frmHeThong();
+                    frmHeThong.Show();//mo tab he thong
+                }
+                else
+                {
+                MessageBox.Show("Sai ten dang nhap hoac mat khau");
+
+                }
+            }
 
         }
     }

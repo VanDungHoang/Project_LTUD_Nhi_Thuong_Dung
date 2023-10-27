@@ -1,6 +1,6 @@
 ﻿namespace DemoKhuDuLich
 {
-    partial class frmThongTinTaiKHoan
+    partial class frmThongTinTaiKhoan
     {
         /// <summary>
         /// Required designer variable.
@@ -57,6 +57,7 @@
             this.lblIdNhanVien.Size = new System.Drawing.Size(80, 16);
             this.lblIdNhanVien.TabIndex = 0;
             this.lblIdNhanVien.Text = "ID nhân viên";
+            this.lblIdNhanVien.UseWaitCursor = true;
             // 
             // txtIDNhanVien
             // 
@@ -64,6 +65,7 @@
             this.txtIDNhanVien.Name = "txtIDNhanVien";
             this.txtIDNhanVien.Size = new System.Drawing.Size(189, 22);
             this.txtIDNhanVien.TabIndex = 1;
+            this.txtIDNhanVien.UseWaitCursor = true;
             // 
             // lblTenNhanVien
             // 
@@ -74,6 +76,7 @@
             this.lblTenNhanVien.Size = new System.Drawing.Size(91, 16);
             this.lblTenNhanVien.TabIndex = 0;
             this.lblTenNhanVien.Text = "Tên nhân viên";
+            this.lblTenNhanVien.UseWaitCursor = true;
             // 
             // txtTenNhanVien
             // 
@@ -81,6 +84,7 @@
             this.txtTenNhanVien.Name = "txtTenNhanVien";
             this.txtTenNhanVien.Size = new System.Drawing.Size(189, 22);
             this.txtTenNhanVien.TabIndex = 1;
+            this.txtTenNhanVien.UseWaitCursor = true;
             // 
             // btnSua
             // 
@@ -91,6 +95,7 @@
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseWaitCursor = true;
             // 
             // btnXoa
             // 
@@ -101,6 +106,7 @@
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseWaitCursor = true;
             // 
             // btnThoat
             // 
@@ -111,6 +117,7 @@
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseWaitCursor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label1
@@ -123,6 +130,7 @@
             this.label1.Size = new System.Drawing.Size(349, 29);
             this.label1.TabIndex = 6;
             this.label1.Text = "Danh sách Tài Khoản nhân viên";
+            this.label1.UseWaitCursor = true;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lvDanhSachTaiKhoanNV
@@ -144,6 +152,7 @@
             this.lvDanhSachTaiKhoanNV.Size = new System.Drawing.Size(686, 157);
             this.lvDanhSachTaiKhoanNV.TabIndex = 7;
             this.lvDanhSachTaiKhoanNV.UseCompatibleStateImageBehavior = false;
+            this.lvDanhSachTaiKhoanNV.UseWaitCursor = true;
             this.lvDanhSachTaiKhoanNV.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
@@ -187,7 +196,7 @@
             // 
             this.columnHeader9.Text = "Sdth";
             // 
-            // frmThongTinTaiKHoan
+            // frmThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,8 +212,9 @@
             this.Controls.Add(this.lblTenNhanVien);
             this.Controls.Add(this.txtIDNhanVien);
             this.Controls.Add(this.lblIdNhanVien);
-            this.Name = "frmThongTinTaiKHoan";
-            this.Text = "frmThongTinTaiKHoan";
+            this.Name = "frmThongTinTaiKhoan";
+            this.Text = "Thông tinTaiKhoan";
+            this.UseWaitCursor = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

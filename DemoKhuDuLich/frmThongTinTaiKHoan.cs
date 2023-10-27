@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DemoKhuDuLich
 {
-    public partial class frmThongTinTaiKHoan : Form
+    public partial class frmThongTinTaiKhoan : Form
     {
-        public frmThongTinTaiKHoan()
+        public frmThongTinTaiKhoan()
         {
             InitializeComponent();
         }

@@ -1,0 +1,3 @@
+D:\hk3\LTUD\DoAnLTUD1\check_version_of_Csharp\obj\Debug\check_version_of_Csharp.csproj.AssemblyReference.cache
+D:\hk3\LTUD\DoAnLTUD1\check_version_of_Csharp\obj\Debug\check_version_of_Csharp.csproj.SuggestedBindingRedirects.cache
+D:\hk3\LTUD\DoAnLTUD1\check_version_of_Csharp\obj\Debug\check_version_of_Csharp.csproj.CoreCompileInputs.cache

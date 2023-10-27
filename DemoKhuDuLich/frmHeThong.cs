@@ -51,7 +51,7 @@ namespace DemoKhuDuLich
             {
                 this.Hide(); 
                 
-                frmThongTinTaiKHoan tttk  = new frmThongTinTaiKHoan();
+                frmThongTinTaiKhoan tttk  = new frmThongTinTaiKhoan();
                 tttk.ShowDialog();
                 this.Show();
             }
@@ -104,5 +104,73 @@ namespace DemoKhuDuLich
         {
             this.Close();
         }
+
+        private void hoaDonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "Hóa Đơn")
+                {
+                    isOpen = true;
+                    f.Focus();
+                    break;
+                }
+            }
+            if (isOpen == false)
+            {
+                this.Hide();
+                frmHoaDon ttdv = new frmHoaDon();
+                ttdv.ShowDialog();
+                this.Show();
+            }
+
+        }
+
+        private void nhanVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == " Nhân Viên")
+                {
+                    isOpen = true;
+                    f.Focus();
+                    break;
+                }
+            }
+            if (isOpen == false)
+            {
+                this.Hide();
+                frmNhanVien ttdv = new frmNhanVien();
+                ttdv.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void phanCongToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == " Phân Công")
+                {
+                    isOpen = true;
+                    f.Focus();
+                    break;
+                }
+            }
+            if (isOpen == false)
+            {
+                this.Hide();
+                frmPhanCong ttdv = new frmPhanCong();
+                ttdv.ShowDialog();
+                this.Show();
+            }
+        }
+        //private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    Application.Exit();
+        //}
     }
 }

@@ -47,7 +47,6 @@
             this.lblDangNhap.Size = new System.Drawing.Size(98, 16);
             this.lblDangNhap.TabIndex = 0;
             this.lblDangNhap.Text = "Tên đăng nhập";
-            this.lblDangNhap.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtDangNhap
             // 
@@ -71,7 +70,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(194, 22);
             this.txtMatKhau.TabIndex = 1;
-            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
+            this.txtMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatKhau_KeyPress);
             // 
             // btnthoat
             // 
@@ -94,6 +93,7 @@
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.btnDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatKhau_KeyPress);
             // 
             // label1
             // 
@@ -105,7 +105,6 @@
             this.label1.Size = new System.Drawing.Size(641, 72);
             this.label1.TabIndex = 4;
             this.label1.Text = "Khu du lịch Đại Nam";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // groupBox1
             // 
@@ -133,9 +132,11 @@
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.groupBox1.ResumeLayout(false);
